@@ -1,12 +1,14 @@
-""""Choosing a container"""
+# Choosing a container
 
 # Class roster: a list
+## A list is appropriate for the class roster because a roster contains multiple students in a specific order. Students may also be added or removed during the semester, so the list can be modified easily.
 
 class_roster = ["Juan", "Luis", "Maria", "Pedro", "Renato"]
 class_roster.append("Brito")
 print ("class Roster:", class_roster)
 
 # Unique visitor ID's : a set
+## A set is the best container for unique visitor IDs because sets automatically remove duplicate values. This ensures that the same visitor ID is not stored more than once.
 
 visitors = {"AU001", "AU002", "AU003", "AU004"}
 visitors.remove("AU002")
@@ -14,6 +16,8 @@ visitors.add("AU003")
 print ("visitors:", visitors)
 
 # Student ID to name: a Directory
+## A dictionary is appropriate for looking up a student ID and finding the student's name. The student ID works as the key, and the student's name is the value. This makes searches quick and organized.
+
 student_lookup = {
     "1AU": "Valera",
     "2AU": "Pedri",
@@ -22,6 +26,8 @@ student_lookup = {
 print("Student 2AU:", student_lookup["2AU"])
 
 # Fixed weekday labels: a tuple
+## A tuple is appropriate for the weekday labels because the days have a fixed order and should not be changed. A tuple protects the data from accidental modifications.
+
 weekdays = (
     "Monday",
     "Tuesday",
