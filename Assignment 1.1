@@ -1,0 +1,33 @@
+"""Store a collection of programming languages and display it."""
+
+def print_items(title, items):
+    print(f"\n{title}:")
+    for number, item in enumerate(items, start=1):
+        print(f"{number}. {item}")
+
+
+def main():
+    programming_languages = [
+        "Python",
+        "Java",
+        "C++",
+        "JavaScript",
+        "Go",
+        "Rust",
+        "Swift",
+        "Kotlin",
+    ]
+
+    print_items("Original order", programming_languages)
+
+    alphabetical_languages = sorted(programming_languages)
+    print_items("Alphabetical order", alphabetical_languages)
+
+    reverse_alphabetical_languages = sorted(
+        programming_languages, reverse=True
+    )
+    print_items("Reverse-alphabetical order", reverse_alphabetical_languages)
+
+
+if __name__ == "__main__":
+    main()
